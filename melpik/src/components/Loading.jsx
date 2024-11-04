@@ -1,5 +1,3 @@
-// src/components/Loading.js
-
 import React from 'react';
 import styled from 'styled-components';
 

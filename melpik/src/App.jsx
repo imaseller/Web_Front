@@ -1,13 +1,18 @@
 // App.jsx
-
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/GlobalStyle';
 import Theme from './styles/Theme';
-import Loading from './components/Loading'; // Import the Loading component
+import Loading from './components/Loading';
+import BottomNav from './components/BottomNav';
 
 const Home = lazy(() => import('./pages/Home'));
+
+// const Inventory = lazy(() => import('./pages/Inventory'));
+// const Payment = lazy(() => import('./pages/Payment'));
+// const Store = lazy(() => import('./pages/Store'));
+// const Menu = lazy(() => import('./pages/Menu'));
 
 function App() {
   return (
@@ -17,7 +22,12 @@ function App() {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path='/home' element={<Home />} />
+            {/* <Route path='/inventory' element={<Inventory />} />
+            <Route path='/payment' element={<Payment />} />
+            <Route path='/store' element={<Store />} />
+            <Route path='/menu' element={<Menu />} /> */}
           </Routes>
+          <BottomNav />
         </Suspense>
       </Router>
     </ThemeProvider>
