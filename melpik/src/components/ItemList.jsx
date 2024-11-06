@@ -10,7 +10,7 @@ const items = [
     image: ExIMG1,
     brand: 'SANDRO',
     description: '언발 플레어 미니원피스',
-    price: 150000, // Price in won
+    price: 150000,
     discount: 10,
   },
   {
@@ -18,7 +18,7 @@ const items = [
     image: ExIMG1,
     brand: 'ZOOC',
     description: '볼륨소매 랩 카라 블라우스',
-    price: 150000, // Price in won
+    price: 150000,
     discount: 10,
   },
   {
@@ -26,7 +26,7 @@ const items = [
     image: ExIMG1,
     brand: 'MICHA',
     description: '테일러드 카라 머메이드 원피스',
-    price: 150000, // Price in won
+    price: 150000,
     discount: 10,
   },
   {
@@ -34,7 +34,7 @@ const items = [
     image: ExIMG1,
     brand: 'MICHA',
     description: '테일러드 카라 머메이드 원피스',
-    price: 150000, // Price in won
+    price: 150000,
     discount: 10,
   },
 ];
